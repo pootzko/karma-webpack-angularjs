@@ -10,12 +10,14 @@ module.exports = function (config) {
       "node_modules/angular/angular.js",
       "node_modules/angular-mocks/angular-mocks.js",
       "app.js", // <----------------------------------------------- not sure about how to reference this 
+      //"dist/app.js",
       "tests/common/*.spec.js",
       "tests/common/**/*.spec.js"
     ],
 
     preprocessors: {
       "app.js": ["webpack", "sourcemap"], // <----------------------------------------------- not sure about how to reference this 
+      //"dist/app.js: ["webpack", "sourcemap"]",
       "tests/common/*.spec.js": ["webpack", "sourcemap"],
       "tests/common/**/*.spec.js": ["webpack", "sourcemap"]
     },
