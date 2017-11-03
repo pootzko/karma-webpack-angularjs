@@ -17,7 +17,7 @@ module.exports = function (config) {
 
     preprocessors: {
       "app.js": ["webpack", "sourcemap"], // <----------------------------------------------- not sure about how to reference this 
-      //"dist/app.js: ["webpack", "sourcemap"]",
+      //"dist/app.js": ["webpack", "sourcemap"],
       "tests/common/*.spec.js": ["webpack", "sourcemap"],
       "tests/common/**/*.spec.js": ["webpack", "sourcemap"]
     },
