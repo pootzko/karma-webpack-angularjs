@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "preserveConstEnums": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "ES5",
+    "experimentalDecorators": true,
+    "alwaysStrict": true,
+    "baseUrl": "./src/app/",
+    "paths": {
+      "~/*": [ "*" ],
+      "common": [ "./common" ],
+      "common/*": [ "./common/*" ],
+      "modules": [ "./modules" ],
+      "modules/*": [ "./modules/*" ]
+    },
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "/node_modules/@types"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ]
+}
